@@ -2,15 +2,15 @@ package me.guillaume.recruitment.tournament;
 
 import java.util.ArrayList;
 
-public class Viking {
+public class Highlander {
 
     private int hp;
     private int damage;
     private ArrayList<Equipment> inventory;
 
-    Viking() {
-        this.hp = 120;
-        this.damage = 6;
+    Highlander() {
+        this.hp = 150;
+        this.damage = 12;
         this.inventory = new ArrayList<Equipment>();
 
     }
@@ -27,9 +27,9 @@ public class Viking {
         return damage;
     }
 
-    Viking equip(String name){
-        if (name.equals("buckler")) {
-            inventory.add(new Equipment("buckler", 0, 0, true));
+    Highlander equip(String name){
+        if (name.equals("Great Sword")) {
+            inventory.add(new Equipment("Great Sword", 0, 0, true));
         }
         else {
             inventory.add(new Equipment(name, 0, 0, false));
